@@ -1,0 +1,61 @@
+*{
+    padding:0px;
+    border:0px;
+    padding-top: 0px;
+
+}
+.college{
+    background-color:lavender;
+    text-align: center;
+    color:black;
+}
+@keyframes example {
+    from { background-color:lightgreen; }
+    to { background-color: yellow; }
+  }
+  
+  .application {
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+.application{
+    color:red;
+    height:4vh;
+  
+    width:100vw;
+    text-align:center;
+    position: relative;
+    
+}
+.all{
+    padding-left:20vw;
+    padding-right: 20vw;
+    align-items: center;
+    padding-top: 2vh;
+   
+}
+.login{
+   align-content: center;
+   display: flex;
+}
+.image{
+    width:20vw;
+    height:20vh;
+}
+.hi{
+    padding: 50px;
+}
+.details{
+    text-align: center;
+    padding: 10px;
+}
+.user h1{
+    color: blue;
+   font-size:4vh;
+   display: flex;
+}
+
+/* The animation code */
+

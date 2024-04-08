@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+   
+    <title>Declaration</title>
+
+	
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-datepicker.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+<body>
+    <header>
+        <h1>भारतीय प्रौद्योगिकी संस्थान पटना</h1>
+        <h1>Indian Institute Of Technology Patna</h1>
+    </header>
+    <main>
+        <p class="announcement blink">Application for Faculty Position</p>
+        <div class="all">
+            <div class="details">
+                <div class="legend">
+                    <div class="welcome-name">Welcome, John Doe</div>
+                    <nav>
+                        <div class="dash">
+                            <div class="change">
+                                <a href="#" style="text-decoration : none;  color:white " >Change Password</a>
+                            </div>
+                            <div class="out">
+                                <a href="#" style="text-decoration : none;  color:white" >Logout</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="patents">
+                    <h2>(A) PhD Thesis Supervision </h2>
+                    <form>
+                        <section class="input-section">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading" style="display: flex; flex-direction: row;">
+                                  
+                                            <div class="headings" style="margin-right:10px;">A. Patents </div> 
+                                            <div class="addmore"  style="margin-left:10px;">
+                                          
+                                                <button id="addmoreBtn6" type="button" class="btn btn-danger">Add More Details </button>
+                                                <script>
+                                                    // Function to navigate to the next page
+                                                    function addmore() {
+                                                      // Assuming the current URL pattern is something like 'page1.html'
+                                                      var table = document.getElementById('data-table6').getElementsByTagName('tbody')[0];
+                
+                                                      var rowCount = table.rows.length;
+                var newRow = table.insertRow(rowCount);
+                var cell1=newRow.insertCell(0);
+                cell1.innerHTML=rowCount;
+                newRow.innerHTML+=` <tr height="60px">
+                                            
+                              
+                    <td class="col-md-1"> 
+                                                  <input id="Name"  type="text"  placeholder="Name" class="form-control input-md" maxlength="80" required=""> 
+                                                </td>
+                                              <td class="col-md-1"> 
+                                                <input id="Title"  type="text"  placeholder="Title" class="form-control input-md" required=""> 
+                                              </td>
+                              
+                                              <td class="col-md-1"> 
+                                                <input id="Role"  type="text"  placeholder="Role" class="form-control input-md"  required=""> 
+                                              </td>
+                                              <td class="col-md-1"> 
+                                                <input id="Ongoing/Completed"  type="text"  placeholder="Ongoing/Completed" class="form-control input-md" required=""> 
+                                              </td>
+                                              <td class="col-md-1"> 
+                                                <input id="YOP"  type="text"  placeholder="DD-MM-YYYY" class="form-control input-md"  required=""> 
+                                              </td>
+                                            
+                              
+                                            </tr>
+                                               `;
+                
+                                       }
+                                                    
+                                                    document.getElementById('addmoreBtn6').addEventListener('click', addmore);
+                                                    </script>
+                                             
+                                               
+                                            </div>
+                                          </div>
+                                      <div class="panel-body">
+                                        <table class="table table-bordered" id="data-table6">
+                                            
+                                            <tbody><tr height="30px">
+                                              <th class="col-md-1"> S. No. </th>
+                                              <th class="col-md-1"> Name of Student/Research Scholar </th>
+                                              <th class="col-md-2"> Title of Thesis</th>
+                                              <th class="col-md-1"> Role</th>
+                                              <th class="col-md-1"> Ongoing/Completed</th>
+                                              <th class="col-md-1"> Ongoing Since/ Year of Completion</th>
+                                              <!-- <th class="col-md-1"> Date of Published </th>
+                                              <th class="col-md-1"> Status Filed/Published/Granted </th> -->
+                                            </tr>
+                                            
+                                            
+                                            <tr height="60px">
+                                              <td class="col-md-1"> 1 </td>
+                              
+                                              <td class="col-md-1"> 
+                                                  <input id="Name"  type="text"  placeholder="Name" class="form-control input-md" maxlength="80" required=""> 
+                                                </td>
+                                              <td class="col-md-1"> 
+                                                <input id="Title"  type="text"  placeholder="Title" class="form-control input-md" required=""> 
+                                              </td>
+                              
+                                              <td class="col-md-1"> 
+                                                <input id="Role"  type="text"  placeholder="Role" class="form-control input-md"  required=""> 
+                                              </td>
+                                              <td class="col-md-1"> 
+                                                <input id="Ongoing/Completed"  type="text"  placeholder="Ongoing/Completed" class="form-control input-md" required=""> 
+                                              </td>
+                                              <td class="col-md-1"> 
+                                                <input id="YOP"  type="text"  placeholder="DD-MM-YYYY" class="form-control input-md"  required=""> 
+                                              </td>
+                              
+                                            </tr>
+                                            
+                                           
+                                            <tr height="60px">
+                                                <td class="col-md-1"> 1 </td>
+                                
+                                                <td class="col-md-1"> 
+                                                    <input id="Name"  type="text"  placeholder="Name" class="form-control input-md" maxlength="80" required=""> 
+                                                  </td>
+                                                <td class="col-md-1"> 
+                                                  <input id="Title"  type="text"  placeholder="Title" class="form-control input-md" required=""> 
+                                                </td>
+                                
+                                                <td class="col-md-1"> 
+                                                  <input id="Role"  type="text"  placeholder="Role" class="form-control input-md"  required=""> 
+                                                </td>
+                                                <td class="col-md-1"> 
+                                                  <input id="Ongoing/Completed"  type="text"  placeholder="Ongoing/Completed" class="form-control input-md" required=""> 
+                                                </td>
+                                                <td class="col-md-1"> 
+                                                  <input id="YOP"  type="text"  placeholder="DD-MM-YYYY" class="form-control input-md"  required=""> 
+                                                </td>
+                                  
+                                                <!-- <td class="col-md-1"> 
+                                                  <input id="dop"  type="text"  placeholder="DD-MM-YYYY" class="form-control input-md"  required="">
+                                                </td>
+                                
+                                                 
+                                                <td class="col-md-1"> 
+                                                  <input id="status"  type="text"  placeholder="DD-MM-YYYY" class="form-control input-md"  required="">
+                                                </td> -->
+                                               
+                                
+                                              </tr>
+                                              <tr height="60px">
+                                                <td class="col-md-1"> 1 </td>
+                                
+                                                <td class="col-md-1"> 
+                                                    <input id="Name"  type="text"  placeholder="Name" class="form-control input-md" maxlength="80" required=""> 
+                                                  </td>
+                                                <td class="col-md-1"> 
+                                                  <input id="Title"  type="text"  placeholder="Title" class="form-control input-md" required=""> 
+                                                </td>
+                                
+                                                <td class="col-md-1"> 
+                                                  <input id="Role"  type="text"  placeholder="Role" class="form-control input-md"  required=""> 
+                                                </td>
+                                                <td class="col-md-1"> 
+                                                  <input id="Ongoing/Completed"  type="text"  placeholder="Ongoing/Completed" class="form-control input-md" required=""> 
+                                                </td>
+                                                <td class="col-md-1"> 
+                                                  <input id="YOP"  type="text"  placeholder="DD-MM-YYYY" class="form-control input-md"  required=""> 
+                                                </td>
+                                  
+                                              </tr>
+                                        </tbody></table>
+                              
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </section>
+                          <section class="input-section">
+                            <div class="row">
+                                <div class="col-md-12">
+                                  <div class="panel panel-success">
+                                
+                                  <div class="panel-heading" style="display: flex; flex-direction: row;">
+                                  
+                                    <div class="headings" style="margin-right:10px;">(B). M.Tech/M.E./Master's Degree  </div> 
+                                    <div class="addmore"  style="margin-left:10px;">
+                                  
+                                        <button id="addmoreBtn7" type="button" class="btn btn-danger">Add More Details </button>
+                                        <script>
+                                            // Function to navigate to the next page
+                                            function addmore() {
+                                              // Assuming the current URL pattern is something like 'page1.html'
+                                              var table = document.getElementById('data-table7').getElementsByTagName('tbody')[0];
+        
+                                              var rowCount = table.rows.length;
+        var newRow = table.insertRow(rowCount);
+        var cell1=newRow.insertCell(0);
+        cell1.innerHTML=rowCount;
+        newRow.innerHTML+=` <tr height="60px">
+                                    
+                      
+            <td class="col-md-1"> 
+                                                <input id="Name"  type="text"  placeholder="Name" class="form-control input-md" maxlength="80" required=""> 
+                                              </td>
+                                            <td class="col-md-1"> 
+                                              <input id="Title"  type="text"  placeholder="Title" class="form-control input-md" required=""> 
+                                            </td>
+                            
+                                            <td class="col-md-1"> 
+                                              <input id="Role"  type="text"  placeholder="Role" class="form-control input-md"  required=""> 
+                                            </td>
+                                            <td class="col-md-1"> 
+                                              <input id="Ongoing/Completed"  type="text"  placeholder="Ongoing/Completed" class="form-control input-md" required=""> 
+                                            </td>
+                                            <td class="col-md-1"> 
+                                              <input id="YOP"  type="text"  placeholder="DD-MM-YYYY" class="form-control input-md"  required=""> 
+                                            </td>
+                                       `;
+        
+                               }
+                                            
+                                            document.getElementById('addmoreBtn7').addEventListener('click', addmore);
+                                            </script>
+                                     
+                                       
+                                    </div>
+                                  </div>
+                                    <div class="panel-body">
+                                      <table class="table table-bordered" id="data-table7">
+                                          
+                                          <tbody><tr height="30px">
+                                            <th class="col-md-1"> S. No. </th>
+                                            <th class="col-md-1"> Name of Student/Research Scholar </th>
+                                            <th class="col-md-2"> Title of Thesis</th>
+                                            <th class="col-md-2"> Role</th>
+                                            <th class="col-md-1"> Ongoing/Completed </th>
+                                            <th class="col-md-1"> Ongoing Since/ Year of Completion </th>
+                                            
+                                          </tr>
+                                          
+                                          
+                                          <tr height="60px">
+                                            <td class="col-md-1"> 1 </td>
+                            
+                                            <td class="col-md-1"> 
+                                                <input id="Name"  type="text"  placeholder="Name" class="form-control input-md" maxlength="80" required=""> 
+                                              </td>
+                                            <td class="col-md-1"> 
+                                              <input id="Title"  type="text"  placeholder="Title" class="form-control input-md" required=""> 
+                                            </td>
+                            
+                                            <td class="col-md-1"> 
+                                              <input id="Role"  type="text"  placeholder="Role" class="form-control input-md"  required=""> 
+                                            </td>
+                                            <td class="col-md-1"> 
+                                              <input id="Ongoing/Completed"  type="text"  placeholder="Ongoing/Completed" class="form-control input-md" required=""> 
+                                            </td>
+                                            <td class="col-md-1"> 
+                                              <input id="YOP"  type="text"  placeholder="DD-MM-YYYY" class="form-control input-md"  required=""> 
+                                            </td>
+                            
+                                             
+                                            
+                            
+                                          </tr>
+                                          
+                                         
+                                          <tr height="60px">
+                                            <td class="col-md-1"> 1 </td>
+                            
+                                            <td class="col-md-1"> 
+                                                <input id="Name"  type="text"  placeholder="Name" class="form-control input-md" maxlength="80" required=""> 
+                                              </td>
+                                            <td class="col-md-1"> 
+                                              <input id="Title"  type="text"  placeholder="Title" class="form-control input-md" required=""> 
+                                            </td>
+                            
+                                            <td class="col-md-1"> 
+                                              <input id="Role"  type="text"  placeholder="Role" class="form-control input-md"  required=""> 
+                                            </td>
+                                            <td class="col-md-1"> 
+                                              <input id="Ongoing/Completed"  type="text"  placeholder="Ongoing/Completed" class="form-control input-md" required=""> 
+                                            </td>
+                                            <td class="col-md-1"> 
+                                              <input id="YOP"  type="text"  placeholder="DD-MM-YYYY" class="form-control input-md"  required=""> 
+                                            </td>
+                                            </tr>
+                                            <tr height="60px">
+                                                <td class="col-md-1"> 1 </td>
+                                
+                                                <td class="col-md-1"> 
+                                                    <input id="Name"  type="text"  placeholder="Name" class="form-control input-md" maxlength="80" required=""> 
+                                                  </td>
+                                                <td class="col-md-1"> 
+                                                  <input id="Title"  type="text"  placeholder="Title" class="form-control input-md" required=""> 
+                                                </td>
+                                
+                                                <td class="col-md-1"> 
+                                                  <input id="Role"  type="text"  placeholder="Role" class="form-control input-md"  required=""> 
+                                                </td>
+                                                <td class="col-md-1"> 
+                                                  <input id="Ongoing/Completed"  type="text"  placeholder="Ongoing/Completed" class="form-control input-md" required=""> 
+                                                </td>
+                                                <td class="col-md-1"> 
+                                                  <input id="YOP"  type="text"  placeholder="DD-MM-YYYY" class="form-control input-md"  required=""> 
+                                                </td>
+                                                </tr>
+                                   
+                                       
+                                      </tbody></table>
+                            
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </section>
+                        <section class="input-section">
+                            <div class="row">
+                                <div class="col-md-12">
+                                  <div class="panel panel-success">
+                                  
+                                  <div class="panel-heading" style="display: flex; flex-direction: row;">
+                                  
+                                    <div class="headings" style="margin-right:10px;">(C) B.Tech/B.E./Bachelor's Degree  </div> 
+                                    <div class="addmore"  style="margin-left:10px;">
+                                  
+                                        <button id="addmoreBtn8" type="button" class="btn btn-danger">Add More Details </button>
+                                        <script>
+                                            // Function to navigate to the next page
+                                            function addmore() {
+                                              // Assuming the current URL pattern is something like 'page1.html'
+                                              var table = document.getElementById('data-table8').getElementsByTagName('tbody')[0];
+        
+                                              var rowCount = table.rows.length;
+        var newRow = table.insertRow(rowCount);
+        var cell1=newRow.insertCell(0);
+        cell1.innerHTML=rowCount;
+        newRow.innerHTML+=` <tr height="60px">
+                                    
+                      
+            <td class="col-md-1"> 
+                                                <input id="Name"  type="text"  placeholder="Name" class="form-control input-md" maxlength="80" required=""> 
+                                              </td>
+                                            <td class="col-md-1"> 
+                                              <input id="Title"  type="text"  placeholder="Title" class="form-control input-md" required=""> 
+                                            </td>
+                            
+                                            <td class="col-md-1"> 
+                                              <input id="Role"  type="text"  placeholder="Role" class="form-control input-md"  required=""> 
+                                            </td>
+                                            <td class="col-md-1"> 
+                                              <input id="Ongoing/Completed"  type="text"  placeholder="Ongoing/Completed" class="form-control input-md" required=""> 
+                                            </td>
+                                            <td class="col-md-1"> 
+                                              <input id="YOP"  type="text"  placeholder="DD-MM-YYYY" class="form-control input-md"  required=""> 
+                                            </td>
+                                       `;
+        
+                               }
+                                            
+                                            document.getElementById('addmoreBtn8').addEventListener('click', addmore);
+                                            </script>
+                                     
+                                       
+                                    </div>
+                                  </div>
+                                    <div class="panel-body">
+                                      <table class="table table-bordered" id="data-table8">
+                                          
+                                          <tbody><tr height="30px">
+                                            <th class="col-md-1"> S. No. </th>
+                                            <th class="col-md-1"> Name of Student/Research Scholar </th>
+                                            <th class="col-md-2"> Title of Thesis</th>
+                                            <th class="col-md-2"> Role</th>
+                                            <th class="col-md-1"> Ongoing/Completed </th>
+                                            <th class="col-md-1"> Ongoing Since/ Year of Completion </th>
+                                            
+                                          </tr>
+                                          
+                                          
+                                          <tr height="60px">
+                                            <td class="col-md-1"> 1 </td>
+                            
+                                            <td class="col-md-1"> 
+                                                <input id="Name"  type="text"  placeholder="Name" class="form-control input-md" maxlength="80" required=""> 
+                                              </td>
+                                            <td class="col-md-1"> 
+                                              <input id="Title"  type="text"  placeholder="Title" class="form-control input-md" required=""> 
+                                            </td>
+                            
+                                            <td class="col-md-1"> 
+                                              <input id="Role"  type="text"  placeholder="Role" class="form-control input-md"  required=""> 
+                                            </td>
+                                            <td class="col-md-1"> 
+                                              <input id="Ongoing/Completed"  type="text"  placeholder="Ongoing/Completed" class="form-control input-md" required=""> 
+                                            </td>
+                                            <td class="col-md-1"> 
+                                              <input id="YOP"  type="text"  placeholder="DD-MM-YYYY" class="form-control input-md"  required=""> 
+                                            </td>
+                            
+                                             
+                                            
+                            
+                                          </tr>
+                                          
+                                         
+                                          <tr height="60px">
+                                            <td class="col-md-1"> 1 </td>
+                            
+                                            <td class="col-md-1"> 
+                                                <input id="Name"  type="text"  placeholder="Name" class="form-control input-md" maxlength="80" required=""> 
+                                              </td>
+                                            <td class="col-md-1"> 
+                                              <input id="Title"  type="text"  placeholder="Title" class="form-control input-md" required=""> 
+                                            </td>
+                            
+                                            <td class="col-md-1"> 
+                                              <input id="Role"  type="text"  placeholder="Role" class="form-control input-md"  required=""> 
+                                            </td>
+                                            <td class="col-md-1"> 
+                                              <input id="Ongoing/Completed"  type="text"  placeholder="Ongoing/Completed" class="form-control input-md" required=""> 
+                                            </td>
+                                            <td class="col-md-1"> 
+                                              <input id="YOP"  type="text"  placeholder="DD-MM-YYYY" class="form-control input-md"  required=""> 
+                                            </td>
+                                            </tr>
+                                            <tr height="60px">
+                                                <td class="col-md-1"> 1 </td>
+                                
+                                                <td class="col-md-1"> 
+                                                    <input id="Name"  type="text"  placeholder="Name" class="form-control input-md" maxlength="80" required=""> 
+                                                  </td>
+                                                <td class="col-md-1"> 
+                                                  <input id="Title"  type="text"  placeholder="Title" class="form-control input-md" required=""> 
+                                                </td>
+                                
+                                                <td class="col-md-1"> 
+                                                  <input id="Role"  type="text"  placeholder="Role" class="form-control input-md"  required=""> 
+                                                </td>
+                                                <td class="col-md-1"> 
+                                                  <input id="Ongoing/Completed"  type="text"  placeholder="Ongoing/Completed" class="form-control input-md" required=""> 
+                                                </td>
+                                                <td class="col-md-1"> 
+                                                  <input id="YOP"  type="text"  placeholder="DD-MM-YYYY" class="form-control input-md"  required=""> 
+                                                </td>
+                                                </tr>
+                                   
+                                       
+                                      </tbody></table>
+                            
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </section>
+                       
+                        <!-- Add more sections as needed -->
+                    </form>
+
+
+               
+                    
+
+            </div>
+
+
+            <div class="buttons">
+                <div class="back2">
+                        
+                    <button id="backPageBtn" type="button" class="btn btn-danger">Back </button>
+                    <script>
+                        // Function to navigate to the next page
+                        function goToNextPage() {
+                          // Assuming the current URL pattern is something like 'page1.html'
+                          const currentPageNumber = parseInt(window.location.pathname.match(/page(\d+)/)[1], 10);
+                          const nextPageNumber = currentPageNumber - 1;
+                          const nextPageUrl = 'page' + nextPageNumber + '.html'; // Construct the URL for the next page
+                          
+                          window.location.href = nextPageUrl; // Navigate to the next page
+                        }
+                        
+                        document.getElementById('backPageBtn').addEventListener('click', goToNextPage);
+                        </script>
+                 
+                   
+                </div>
+                <div class="save_and_next">
+                    <div class="save">
+                        <a href="#" style="text-decoration : none;  color:white" >Save</a>
+                    </div>
+                    <div class="next">
+                        <button id="nextPageBtn" type="button" class="btn btn-success"> Next </button>
+                        <script>
+                            // Function to navigate to the next page
+                            function goToNextPage() {
+                              // Assuming the current URL pattern is something like 'page1.html'
+                              const currentPageNumber = parseInt(window.location.pathname.match(/page(\d+)/)[1], 10);
+                              const nextPageNumber = currentPageNumber + 1;
+                              const nextPageUrl = 'page' + nextPageNumber + '.html'; // Construct the URL for the next page
+                              
+                              window.location.href = nextPageUrl; // Navigate to the next page
+                            }
+                            
+                            document.getElementById('nextPageBtn').addEventListener('click', goToNextPage);
+                            </script>
+                            
+                            
+
+                    </div>
+            </div>
+            </div>
+        </div>
+
+
+        </div>
+        
+        </div>
+       
+    </main>
+</body>
+
+</html>

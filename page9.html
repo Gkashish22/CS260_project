@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Publications</title>
+
+
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-datepicker.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+<body>
+    <header>
+        <h1>भारतीय प्रौद्योगिकी संस्थान पटना</h1>
+        <h1>Indian Institute Of Technology Patna</h1>
+    </header>
+    <main>
+        <p class="announcement blink">Application for Faculty Position</p>
+        <div class="all">
+            <div class="details">
+                <div class="legend">
+                    <div class="welcome-name">Welcome, John Doe</div>
+                    <nav>
+                        <div class="dash">
+                            <div class="change">
+                                <a href="#" style="text-decoration : none;  color:white ">Change Password</a>
+                            </div>
+                            <div class="out">
+                                <a href="#" style="text-decoration : none;  color:white">Logout</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="write">
+
+                    <form>
+                        <section class="input-section">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading">23. Final Declaration *
+
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="declaration">
+
+                                                <textarea id="declarationText"
+                                                    disabled>I hereby declare that I have carefully read and understood the instructions and particulars mentioned in the advertisment and this application form. I further declare that all the entries along with the attachments uploaded in this form are true to the best of my knowledge and belief.</textarea>
+
+                                                <div class="accept"> <input type="checkbox" id="acceptCheckbox">
+                                                    <label for="acceptCheckbox">I accept the declaration</label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </section>
+                        <div class="check">
+                            <p class="note">Note: The form can be edited till the cutoff date of the rolling
+                                advertisment</p>
+                        </div>
+                    </form>
+
+                </div>
+
+
+
+
+
+
+                <div class="buttons">
+                    <div class="back2">
+
+                        <button id="backPageBtn" type="button" class="btn btn-danger">Back </button>
+                        <script>
+                            // Function to navigate to the next page
+                            function goToNextPage() {
+                                // Assuming the current URL pattern is something like 'page1.html'
+                                const currentPageNumber = parseInt(window.location.pathname.match(/page(\d+)/)[1], 10);
+                                const nextPageNumber = currentPageNumber - 1;
+                                const nextPageUrl = 'page' + nextPageNumber + '.html'; // Construct the URL for the next page
+
+                                window.location.href = nextPageUrl; // Navigate to the next page
+                            }
+
+                            document.getElementById('backPageBtn').addEventListener('click', goToNextPage);
+                        </script>
+
+
+                    </div>
+                    <div class="save_and_next">
+                        <div class="save">
+                            <a href="#" style="text-decoration : none;  color:white">Save</a>
+                        </div>
+                        <div class="next">
+                            <button id="submitPageBtn" type="button" class="btn btn-success"> Submit </button>
+                            <script>
+                                // Function to navigate to the next page
+                                function submitNextPage() {
+                                    // Assuming the current URL pattern is something like 'page1.html'
+
+                                    const nextPageUrl = 'pr' + '.html'; // Construct the URL for the next page
+
+                                    window.location.href = nextPageUrl; // Navigate to the next page
+                                }
+
+                                document.getElementById('submitPageBtn').addEventListener('click', submitNextPage);
+                            </script>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+
+        </div>
+
+    </main>
+</body>
+
+</html>
